@@ -39,7 +39,7 @@
     "node": ">=8"
   },
   "scripts": {
-    "build": "webpack --mode production --display-modules",
+    "build": "node init && webpack --mode production --display-modules",
     "clean": "node scripts/clean",
     "check": "npm run check:config && npm run check:compiler && npm run check:library",
     "check:config": "tsc --noEmit -p src --diagnostics --listFiles",

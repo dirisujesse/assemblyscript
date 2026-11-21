@@ -8,7 +8,7 @@
     "asbuild:asmjs": "asc assembly/index.ts -a build/index.asm.js -O3 --validate --noDebug --noAssert",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized && npm run asbuild:asmjs",
     "tsbuild": "tsc -p assembly -t ES2017 -m commonjs --outDir build",
-    "build": "npm run asbuild && npm run tsbuild",
+    "build": "node init && npm run asbuild && npm run tsbuild",
     "server": "http-server . -o -c-1",
     "test": "node tests"
   },

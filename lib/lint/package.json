@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.json",
   "scripts": {
-    "build": "tsc --project ./src --outDir . --diagnostics"
+    "build": "node init && tsc --project ./src --outDir . --diagnostics"
   },
   "peerDependencies": {
     "tslint": "^5.9.1"
